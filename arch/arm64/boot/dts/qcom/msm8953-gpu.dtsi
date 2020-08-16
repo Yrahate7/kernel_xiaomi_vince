@@ -54,7 +54,7 @@
 			< 5859 >, /* 7. DDR:768.00 MHz BIMC: 384.00 MHz */
 			< 6152 >, /* 8. DDR:806.40 MHz BIMC: 403.20 MHz */
 			< 6445 >, /* 9. DDR:844.80 MHz BIMC: 422.40 MHz */
-			< 7104 >; /*10. DDR:931.20 MHz BIMC: 465.60 MHz */
+			< 8000 >; /*10. DDR:931.20 MHz BIMC: 465.60 MHz */
 	};
 
 	msm_gpu: qcom,kgsl-3d0@1c00000 {
