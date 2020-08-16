@@ -1703,13 +1703,13 @@
 		qcom,msm-bus,num-paths = <1>;
 		qcom,msm-bus,vectors-KBps =
 					<61 512 0 0>,
-					<61 512 240000 800000>,
-					<61 512 240000 800000>;
+					<61 512 320000 800000>,
+					<61 512 320000 800000>;
 
 		/* CPU-CLUSTER-WFI-LVL latency +1 */
 		qcom,pm-qos-latency = <2>;
 
-		qcom,dwc-usb3-msm-tx-fifo-size = <21288>;
+		qcom,dwc-usb3-msm-tx-fifo-size = <1000000>;
 
 		clocks = <&clock_gcc clk_gcc_usb30_master_clk>,
 			<&clock_gcc clk_gcc_pcnoc_usb3_axi_clk>,
@@ -1722,7 +1722,7 @@
 				"sleep_clk", "xo", "cfg_ahb_clk";
 
 		qcom,core-clk-rate = <133333333>; /* NOM */
-		qcom,core-clk-rate-hs = <60000000>; /* LOW SVS */
+		qcom,core-clk-rate-hs = <125000000>; /* LOW SVS */
 
 		resets = <&clock_gcc GCC_USB_30_BCR>;
 		reset-names = "core_reset";
